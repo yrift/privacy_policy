@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WX Studio</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+        background: #0D0D0D;
+        color: white;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 220px;
+        margin-bottom: 30px;
+        border-radius: 24px;
+    }
+
+    .banner {
+        width: 100%;
+        max-width: 900px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        opacity: 0.9;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        background: linear-gradient(90deg, #ff7a18, #a259ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+        color: #aaa;
+        margin-bottom: 40px;
+    }
+
+    .quotes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .quote {
+        background: rgba(255,255,255,0.05);
+        padding: 20px;
+        border-radius: 16px;
+        backdrop-filter: blur(10px);
+        transition: 0.3s;
+    }
+
+    .quote:hover {
+        transform: translateY(-5px);
+        background: rgba(255,255,255,0.08);
+    }
+
+    .lang {
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 8px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px 20px;
+        color: #666;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <!-- App Icon -->
+    <img src="icon.png" class="logo" alt="WX Logo">
+
+    <!-- Banner -->
+    <img src="banner.png" class="banner" alt="WX Banner">
+
+    <h1>WX Studio</h1>
+    <div class="subtitle">Apps & Games • Built for the World</div>
+
+    <div class="quotes">
+
+        <div class="quote">
+            <div class="lang">🇹🇷 Türkçe</div>
+            <div>Dünya büyük, yazılım evrensel. Kod yazarken sınır yoktur.</div>
+        </div>
+
+        <div class="quote">
+            <div class="lang">🇺🇸 English</div>
+            <div>The world is vast, but code connects us all.</div>
+        </div>
+
+        <div class="quote">
+            <div class="lang">🇪🇸 Español</div>
+            <div>El código no tiene fronteras, solo posibilidades.</div>
+        </div>
+
+        <div class="quote">
+            <div class="lang">🇸🇦 العربية</div>
+            <div>العالم واسع، لكن البرمجة تجمعنا.</div>
+        </div>
+
+        <div class="quote">
+            <div class="lang">🇩🇪 Deutsch</div>
+            <div>Code kennt keine Grenzen, nur Ideen.</div>
+        </div>
+
+        <div class="quote">
+            <div class="lang">🇫🇷 Français</div>
+            <div>Le code est un langage universel qui unit le monde.</div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 WX Studio — Built with passion 🌍
+</footer>
+
+</body>
+</html>
