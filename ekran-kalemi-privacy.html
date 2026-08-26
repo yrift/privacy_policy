@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Ekran Kalemi / Screen Pen</title>
+<meta name="description" content="Ekran Kalemi (Screen Pen) gizlilik politikası. Çizimleriniz ve ekran görüntüleriniz cihazınızda kalır.">
+<style>
+  :root {
+    --bg: #f7f5f0;
+    --card: #ffffff;
+    --ink: #16161d;
+    --muted: #5b5766;
+    --line: #e3ded3;
+    --accent: #6c4cf1;
+    --accent-soft: #efeaff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e14;
+      --card: #16161f;
+      --ink: #eceaf2;
+      --muted: #9a95a8;
+      --line: #26262f;
+      --accent: #9b86ff;
+      --accent-soft: #1d1a2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+
+  header { margin-bottom: 28px; }
+  .mark {
+    display: inline-flex; align-items: center; gap: 12px;
+    text-decoration: none; color: inherit;
+  }
+  .mark svg { width: 40px; height: 40px; flex: none; }
+  .mark b { font-size: 18px; letter-spacing: -0.01em; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 22px 0 6px; letter-spacing: -0.02em; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+
+  .langs { display: flex; gap: 8px; margin: 24px 0 0; }
+  .langs button {
+    font: inherit; font-size: 14px; font-weight: 600;
+    padding: 7px 16px; border-radius: 999px; cursor: pointer;
+    background: transparent; color: var(--muted);
+    border: 1px solid var(--line);
+  }
+  .langs button[aria-pressed="true"] {
+    background: var(--accent-soft); color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .lead {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 18px 20px; margin: 26px 0 8px;
+  }
+  .lead p { margin: 0 0 10px; }
+  .lead p:last-child { margin-bottom: 0; }
+
+  h2 {
+    font-size: 20px; margin: 38px 0 10px; letter-spacing: -0.01em;
+    padding-top: 18px; border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 20px; }
+  li { margin: 5px 0; }
+  a { color: var(--accent); }
+
+  .table-scroll { overflow-x: auto; margin: 14px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 420px; font-size: 15px; }
+  th, td {
+    text-align: left; padding: 10px 12px;
+    border-bottom: 1px solid var(--line); vertical-align: top;
+  }
+  th { color: var(--muted); font-weight: 600; font-size: 13px;
+       text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .none { font-weight: 700; color: var(--accent); }
+
+  footer {
+    margin-top: 46px; padding-top: 20px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 14px;
+  }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="mark">
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <defs>
+        <linearGradient id="g" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0" stop-color="#6C4CF1"/><stop offset="1" stop-color="#FF375F"/>
+        </linearGradient>
+      </defs>
+      <path d="M44 15c-9-6-24-3-28 6-4 9 3 20 14 22 11 2 21-5 21-14 0-7-6-12-13-12"
+            fill="none" stroke="url(#g)" stroke-width="7" stroke-linecap="round"/>
+    </svg>
+    <b>Ekran Kalemi · Screen Pen</b>
+  </span>
+
+  <h1 data-tr="Gizlilik Politikası" data-en="Privacy Policy">Gizlilik Politikası</h1>
+  <p class="meta">
+    <span data-tr="Yürürlük tarihi: 26 Ağustos 2026" data-en="Effective date: 26 August 2026">Yürürlük tarihi: 26 Ağustos 2026</span>
+    · com.wallex.ekrankalemi
+  </p>
+
+  <div class="langs">
+    <button type="button" data-lang="tr" aria-pressed="true">Türkçe</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<!-- ------------------------------------------------------------------ TR -->
+<main id="tr">
+  <div class="lead">
+    <p><strong>Ekran Kalemi'nin sunucusu yok.</strong> Çizdiklerin, defterlerin ve
+    kaydettiğin ekran görüntüleri telefonunda kalır; bize hiçbiri gönderilmez.
+    Uygulama hesap açmanı istemez, adını veya e-postanı sormaz.</p>
+    <p>Cihazdan dışarı çıkan tek şey, reklamları gösteren <strong>Google AdMob</strong>'un
+    ve satın almayı yürüten <strong>Google Play Faturalandırma</strong>'nın topladıklarıdır.</p>
+  </div>
+
+  <h2>Bizim topladıklarımız</h2>
+  <p><span class="none">Hiçbir şey.</span> Wallex Soft'un sunucusu yoktur,
+  uygulamada analiz veya telemetri aracı bulunmaz, çökme raporu gönderilmez.</p>
+
+  <h2>Cihazında kalanlar</h2>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th>Ne</th><th>Nerede durur</th></tr></thead>
+      <tbody>
+        <tr><td>Defterler ve sayfa çizimleri</td><td>Uygulamanın kendi özel klasöründe, vektör olarak</td></tr>
+        <tr><td>Kaydedilen ekran görüntüleri</td><td>Cihaz galerinde, <code>Resimler/Ekran Kalemi</code> klasöründe</td></tr>
+        <tr><td>Ayarlar (dil, tema, araç çubuğu, reklamsız hakkı)</td><td>Cihazın yerel tercih deposunda</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Bunları uygulamadan silebilir ya da uygulamayı kaldırarak topluca
+  temizleyebilirsin. Galeriye kaydedilmiş görüntüler uygulamayı kaldırınca
+  silinmez; onlar artık galerinin bir parçasıdır ve oradan silinir.</p>
+
+  <h2>Ekran yakalama</h2>
+  <p>Kamera düğmesine bastığında Android'in kendi izin ekranı çıkar ve tek bir
+  kare alınır. Uygulama ekranı <strong>kaydetmez</strong>, izlemez, hiçbir yere
+  aktarmaz. Alınan kare doğrudan galerine yazılır. İzin her yakalamada yeniden
+  sorulur.</p>
+
+  <h2>Paylaşma</h2>
+  <p>Bir görüntüyü paylaştığında Android'in paylaşım penceresi açılır ve dosya
+  senin seçtiğin uygulamaya gider. Ne gönderdiğini biz görmeyiz; o noktadan
+  sonra alıcı uygulamanın kendi gizlilik politikası geçerlidir.</p>
+
+  <h2>Reklamlar</h2>
+  <p>Ücretsiz sürümde Google AdMob reklam gösterir. AdMob ve reklam ortakları
+  şunları toplayabilir:</p>
+  <ul>
+    <li>Reklam kimliği (Android Advertising ID)</li>
+    <li>Cihaz ve uygulama bilgileri (model, işletim sistemi sürümü, dil, uygulama sürümü)</li>
+    <li>IP adresinden çıkarılan yaklaşık konum</li>
+    <li>Reklamı görme ve tıklama bilgisi</li>
+  </ul>
+  <p>Bu veriler bize değil Google'a gider. Ayrıntılar:
+  <a href="https://policies.google.com/privacy">Google gizlilik politikası</a> ve
+  <a href="https://policies.google.com/technologies/partner-sites">Google iş ortaklarının verileri nasıl kullandığı</a>.</p>
+  <p>Reklam kimliğini Android'de <strong>Ayarlar → Gizlilik → Reklamlar</strong>
+  yolundan sıfırlayabilir veya silebilirsin. <strong>Reklamsız</strong> satın
+  alırsan reklam gösterilmez ve reklam SDK'sı reklam istemeyi bırakır.</p>
+
+  <h2>Satın alma</h2>
+  <p>"Reklamsız" tek seferlik bir satın almadır. Ödeme tamamen
+  <strong>Google Play</strong> üzerinden yürür; kart bilgilerini ne görürüz ne
+  saklarız. Uygulama yalnızca cihazında "satın alındı" anlamına gelen bir işaret
+  tutar. Aynı Google hesabıyla başka bir cihaza kurduğunda
+  <strong>Satın alımı geri yükle</strong> ile hakkını geri alırsın.</p>
+  <p>Satın alma ve iade işlemleri Google Play'in
+  <a href="https://play.google.com/intl/tr/about/play-terms/">kullanım şartlarına</a> tabidir.</p>
+
+  <h2>İzinler</h2>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th>İzin</th><th>Ne için</th></tr></thead>
+      <tbody>
+        <tr><td>Diğer uygulamaların üzerine çizme</td><td>Kalemin işi bu; onsuz uygulama çalışmaz</td></tr>
+        <tr><td>Ön plan servisi</td><td>Kalem açıkken sistem tarafından kapatılmaması için</td></tr>
+        <tr><td>Ekran yakalama (medya projeksiyonu)</td><td>Yalnızca sen kamera düğmesine bastığında, tek kare için</td></tr>
+        <tr><td>Bildirim</td><td>Kalem açıkken kapatma düğmesi sunan bildirim için; reddedebilirsin</td></tr>
+        <tr><td>İnternet</td><td>Yalnızca reklam ve satın alma için</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Çocuklar</h2>
+  <p>Uygulama çocuklara yönelik değildir ve bilerek 13 yaş altındaki
+  kullanıcılardan veri toplamaz. Böyle bir durumdan haberdar olursak gereğini
+  yaparız.</p>
+
+  <h2>Haklarınız</h2>
+  <p>Bizde saklanan kişisel veriniz olmadığı için silme veya erişim talebi
+  yöneltilecek bir kayıt yoktur. Google'ın topladıkları için Google'ın
+  politikaları ve araçları geçerlidir. Uygulamayı kaldırmak, cihazındaki tüm
+  uygulama verisini siler.</p>
+
+  <h2>Değişiklikler</h2>
+  <p>Bu politika değişirse yukarıdaki tarih güncellenir. Önemli bir değişiklik
+  olursa uygulamanın sürüm notlarında belirtilir.</p>
+
+  <h2>İletişim</h2>
+  <p><a href="mailto:wallexsoft@gmail.com">wallexsoft@gmail.com</a></p>
+</main>
+
+<!-- ------------------------------------------------------------------ EN -->
+<main id="en" hidden>
+  <div class="lead">
+    <p><strong>Screen Pen has no server.</strong> Your drawings, notebooks and
+    saved screen captures stay on your phone; none of them are sent to us. The
+    app asks for no account, no name and no email address.</p>
+    <p>The only things that leave your device are what <strong>Google AdMob</strong>
+    collects to show ads and what <strong>Google Play Billing</strong> needs to
+    process a purchase.</p>
+  </div>
+
+  <h2>What we collect</h2>
+  <p><span class="none">Nothing.</span> Wallex Soft runs no server, the app
+  contains no analytics or telemetry, and no crash reports are sent.</p>
+
+  <h2>What stays on your device</h2>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th>What</th><th>Where it lives</th></tr></thead>
+      <tbody>
+        <tr><td>Notebooks and page drawings</td><td>The app's own private folder, stored as vectors</td></tr>
+        <tr><td>Saved screen captures</td><td>Your device gallery, in <code>Pictures/Screen Pen</code></td></tr>
+        <tr><td>Settings (language, theme, toolbar, ad-free entitlement)</td><td>Local preference storage</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>You can delete these in the app, or remove them all at once by
+  uninstalling. Captures already written to the gallery are not removed on
+  uninstall — they are part of your gallery and are deleted from there.</p>
+
+  <h2>Screen capture</h2>
+  <p>Tapping the camera button brings up Android's own permission prompt and
+  grabs a single frame. The app does <strong>not</strong> record the screen,
+  watch it, or transmit it anywhere. The frame is written straight to your
+  gallery. The permission is asked again for every capture.</p>
+
+  <h2>Sharing</h2>
+  <p>Sharing a capture opens Android's share sheet and hands the file to
+  whichever app you pick. We do not see what you send; the receiving app's own
+  privacy policy applies from that point.</p>
+
+  <h2>Ads</h2>
+  <p>The free version shows ads through Google AdMob. AdMob and its advertising
+  partners may collect:</p>
+  <ul>
+    <li>Advertising ID (Android Advertising ID)</li>
+    <li>Device and app information (model, OS version, language, app version)</li>
+    <li>Approximate location derived from IP address</li>
+    <li>Ad impressions and interactions</li>
+  </ul>
+  <p>This data goes to Google, not to us. Details:
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and
+  <a href="https://policies.google.com/technologies/partner-sites">how Google's partners use data</a>.</p>
+  <p>You can reset or delete your advertising ID in Android under
+  <strong>Settings → Privacy → Ads</strong>. Buying <strong>Ad-free</strong>
+  stops the ads, and the ad SDK stops requesting them.</p>
+
+  <h2>Purchases</h2>
+  <p>"Ad-free" is a one-time purchase. Payment is handled entirely by
+  <strong>Google Play</strong> — we never see or store card details. The app only
+  keeps a flag on your device meaning "purchased". Installing on another device
+  with the same Google account restores it through
+  <strong>Restore purchase</strong>.</p>
+  <p>Purchases and refunds are governed by Google Play's
+  <a href="https://play.google.com/intl/en/about/play-terms/">terms of service</a>.</p>
+
+  <h2>Permissions</h2>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td>Draw over other apps</td><td>This is what the pen does; the app cannot work without it</td></tr>
+        <tr><td>Foreground service</td><td>Keeps the pen from being killed while it is on screen</td></tr>
+        <tr><td>Screen capture (media projection)</td><td>Only when you tap the camera button, for one frame</td></tr>
+        <tr><td>Notifications</td><td>For the notification that offers a stop button; you may decline</td></tr>
+        <tr><td>Internet</td><td>Ads and purchases only</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children and does not knowingly collect data
+  from anyone under 13. If we learn otherwise, we will act on it.</p>
+
+  <h2>Your rights</h2>
+  <p>We hold no personal data about you, so there is no record for an access or
+  deletion request to reach. For what Google collects, Google's policies and
+  tools apply. Uninstalling the app removes all of its data from your device.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the date above is updated. Anything significant is
+  called out in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:wallexsoft@gmail.com">wallexsoft@gmail.com</a></p>
+</main>
+
+<footer>
+  <p>Wallex Soft · <a href="mailto:wallexsoft@gmail.com">wallexsoft@gmail.com</a></p>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  var buttons = document.querySelectorAll('.langs button');
+  var panes = { tr: document.getElementById('tr'), en: document.getElementById('en') };
+  var swaps = document.querySelectorAll('[data-tr]');
+
+  function show(lang) {
+    for (var key in panes) panes[key].hidden = (key !== lang);
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+    });
+    swaps.forEach(function (el) { el.textContent = el.dataset[lang]; });
+    document.documentElement.lang = lang;
+    try { localStorage.setItem('ek-privacy-lang', lang); } catch (e) {}
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { show(b.dataset.lang); });
+  });
+
+  // Remembered choice wins; otherwise follow the browser, defaulting to Turkish
+  // for Turkish speakers and English for everyone else.
+  var saved = null;
+  try { saved = localStorage.getItem('ek-privacy-lang'); } catch (e) {}
+  var guess = (navigator.language || 'tr').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en';
+  show(saved === 'tr' || saved === 'en' ? saved : guess);
+})();
+</script>
+</body>
+</html>
