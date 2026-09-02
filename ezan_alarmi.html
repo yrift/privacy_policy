@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ezan Alarmı Gizlilik Politikası</title>
+<meta name="description" content="Ezan Alarmı (Prayer Times) uygulamasının Türkçe ve İngilizce gizlilik politikası.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ground: #FBF6EC;
+    --surface: #FFFFFF;
+    --ink: #241C18;
+    --muted: #6E5F55;
+    --hair: #E7DAC6;
+    --nar: #7E1E2C;
+    --nar-soft: #F3E1E0;
+    --gold: #A9812F;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #16110F;
+      --surface: #1F1815;
+      --ink: #EEE2DA;
+      --muted: #B29E92;
+      --hair: #382C26;
+      --nar: #E79AA6;
+      --nar-soft: #2A1418;
+      --gold: #D9B45A;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Source Sans 3", system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 22px 88px; }
+
+  header.masthead {
+    background:
+      radial-gradient(120% 140% at 50% -40%, rgba(169,129,47,.30), transparent 60%),
+      linear-gradient(160deg, var(--nar) 0%, #4E0F19 100%);
+    color: #FBF1E4;
+    padding: 46px 22px 40px;
+    text-align: center;
+    border-bottom: 2px solid var(--gold);
+  }
+  .masthead .inner { max-width: 720px; margin: 0 auto; }
+  .brand {
+    display: inline-flex; align-items: center; gap: 12px;
+    letter-spacing: .28em; text-transform: uppercase;
+    font-size: 12px; font-weight: 600; color: var(--gold);
+    margin-bottom: 14px;
+  }
+  .brand .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
+  header.masthead h1 {
+    font-family: "Amiri", Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(30px, 6vw, 44px);
+    line-height: 1.12;
+    margin: 0;
+    text-wrap: balance;
+    color: #FDF7EE;
+  }
+  header.masthead .eff {
+    margin-top: 16px; font-size: 14px; color: rgba(253,247,238,.72);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .langbar {
+    position: sticky; top: 0; z-index: 5;
+    display: flex; justify-content: center; gap: 8px;
+    padding: 12px; background: color-mix(in srgb, var(--ground) 88%, transparent);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--hair);
+  }
+  .langbar button {
+    font: inherit; font-size: 14px; font-weight: 600;
+    padding: 7px 18px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--hair); background: var(--surface); color: var(--muted);
+    transition: all .15s ease;
+  }
+  .langbar button[aria-pressed="true"] {
+    background: var(--nar); color: #FBF1E4; border-color: var(--nar);
+  }
+  .langbar button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+  .lead {
+    font-size: 18px; color: var(--muted); margin: 34px 0 8px;
+    padding-left: 16px; border-left: 3px solid var(--gold);
+  }
+
+  h2 {
+    font-family: "Amiri", Georgia, serif;
+    font-weight: 700; font-size: 24px; line-height: 1.25;
+    margin: 40px 0 6px; color: var(--ink); text-wrap: balance;
+  }
+  h2 .num {
+    color: var(--nar); font-size: 15px; font-family: "Source Sans 3", sans-serif;
+    font-weight: 700; margin-right: 10px; font-variant-numeric: tabular-nums;
+  }
+  p { margin: 12px 0; }
+  a { color: var(--nar); text-decoration-color: var(--gold); text-underline-offset: 3px; }
+  strong { font-weight: 600; }
+
+  ul { margin: 12px 0; padding: 0; list-style: none; }
+  ul li { position: relative; padding: 4px 0 4px 24px; }
+  ul li::before {
+    content: ""; position: absolute; left: 4px; top: 14px;
+    width: 6px; height: 6px; border-radius: 50%; background: var(--gold);
+  }
+
+  .data-card {
+    background: var(--surface); border: 1px solid var(--hair);
+    border-radius: 14px; overflow: hidden; margin: 18px 0;
+  }
+  .data-row { display: grid; grid-template-columns: 1fr; gap: 2px; padding: 15px 18px; }
+  .data-row + .data-row { border-top: 1px solid var(--hair); }
+  .data-row .k {
+    font-weight: 700; color: var(--nar); font-size: 15.5px;
+    display: flex; align-items: center; gap: 9px;
+  }
+  .data-row .k .chip {
+    font-size: 11px; font-weight: 700; letter-spacing: .04em;
+    padding: 2px 9px; border-radius: 999px;
+    background: var(--nar-soft); color: var(--nar);
+  }
+  .data-row .v { color: var(--muted); font-size: 15.5px; }
+
+  .callout {
+    background: var(--nar-soft); border-radius: 12px; padding: 16px 18px;
+    margin: 20px 0; font-size: 15.5px; color: var(--ink);
+    border: 1px solid color-mix(in srgb, var(--nar) 22%, transparent);
+  }
+
+  .contact {
+    margin-top: 40px; padding: 22px; border-radius: 16px;
+    background: var(--surface); border: 1px solid var(--hair);
+    text-align: center;
+  }
+  .contact a.mail {
+    display: inline-block; margin-top: 6px; font-size: 19px; font-weight: 700;
+    font-family: "Amiri", Georgia, serif;
+  }
+  footer.foot {
+    text-align: center; color: var(--muted); font-size: 13.5px;
+    margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--hair);
+  }
+  [hidden] { display: none !important; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="inner">
+    <span class="brand"><span class="dot"></span>Ezan Alarmı · Prayer Times</span>
+    <h1 data-tr="Gizlilik Politikası" data-en="Privacy Policy">Gizlilik Politikası</h1>
+    <div class="eff"><span data-tr="Yürürlük tarihi: 2 Eylül 2026" data-en="Effective date: 2 September 2026">Yürürlük tarihi: 2 Eylül 2026</span></div>
+  </div>
+</header>
+
+<nav class="langbar" aria-label="Dil / Language">
+  <button id="btn-tr" aria-pressed="true" onclick="setLang('tr')">Türkçe</button>
+  <button id="btn-en" aria-pressed="false" onclick="setLang('en')">English</button>
+</nav>
+
+<div class="wrap">
+
+  <!-- ===================== TÜRKÇE ===================== -->
+  <section id="tr">
+    <p class="lead">Ezan Alarmı (“uygulama”), namaz vakitlerini gösteren ve ezan alarmı kuran bir uygulamadır. Gizliliğine saygı duyuyoruz. Bu politika, hangi verilerin işlendiğini ve neden işlendiğini sade bir dille açıklar.</p>
+
+    <div class="callout">Kısa özet: Hesap açmıyoruz, adını veya e-postanı istemiyoruz. Namaz vakitlerini hesaplamak için konum, reklam ve uygulamayı iyileştirmek için anonim kullanım/çökme verileri kullanılır. Verilerini satmıyoruz.</div>
+
+    <h2><span class="num">1</span>Toplanan veriler ve amaçları</h2>
+    <div class="data-card">
+      <div class="data-row">
+        <div class="k">Konum <span class="chip">Namaz vakti</span></div>
+        <div class="v">Bulunduğun yerin namaz vakitlerini ve kıble yönünü hesaplamak için kullanılır. Konum cihazında işlenir ve yalnızca vakitleri getirmek üzere namaz vakti sağlayıcılarına gönderilir; sunucularımızda saklanmaz, kimliğinle ilişkilendirilmez.</div>
+      </div>
+      <div class="data-row">
+        <div class="k">Reklam kimliği <span class="chip">Reklam</span></div>
+        <div class="v">Google AdMob, reklam göstermek için reklam kimliğini ve reklam etkileşim verilerini işler. Premium satın alındığında reklamlar kaldırılır.</div>
+      </div>
+      <div class="data-row">
+        <div class="k">Kullanım verileri <span class="chip">Analiz</span></div>
+        <div class="v">Google Firebase Analytics, uygulamanın nasıl kullanıldığını anlamak ve iyileştirmek için anonim olay/istatistik verileri toplar.</div>
+      </div>
+      <div class="data-row">
+        <div class="k">Çökme kayıtları <span class="chip">Kararlılık</span></div>
+        <div class="v">Google Firebase Crashlytics, hataları bulup düzeltmek için çökme raporları ve cihaz durumu bilgisi toplar.</div>
+      </div>
+      <div class="data-row">
+        <div class="k">Satın alma durumu <span class="chip">Premium</span></div>
+        <div class="v">Google Play Faturalandırma üzerinden Premium’a sahip olup olmadığın bilgisi. Ödeme/kart bilgilerini biz görmeyiz; bunları Google işler.</div>
+      </div>
+    </div>
+    <p>Ad, e-posta, telefon numarası gibi kişisel bilgileri uygulama içinde <strong>toplamıyoruz</strong>.</p>
+
+    <h2><span class="num">2</span>Cihaz izinleri</h2>
+    <ul>
+      <li><strong>Konum:</strong> namaz vakitleri ve kıble için.</li>
+      <li><strong>Bildirimler & tam zamanlı alarm:</strong> ezan vaktinde alarmı zamanında çalmak için.</li>
+      <li><strong>Pil optimizasyonu muafiyeti:</strong> alarmın arka planda güvenilir çalması için.</li>
+      <li>İzinleri istediğin zaman cihaz ayarlarından kaldırabilirsin.</li>
+    </ul>
+
+    <h2><span class="num">3</span>Verilerin paylaşıldığı taraflar</h2>
+    <ul>
+      <li><strong>Google</strong> — AdMob (reklam), Firebase (analiz & çökme), Play Faturalandırma (satın alma).</li>
+      <li><strong>Namaz vakti sağlayıcıları</strong> — Türkiye için Diyanet İşleri Başkanlığı verileri, yurt dışı için Aladhan (aladhan.com). Vakitleri getirmek üzere konum/koordinat gönderilir.</li>
+    </ul>
+
+    <h2><span class="num">4</span>Saklama ve güvenlik</h2>
+    <p>Namaz vakitleri ve ayarların cihazında saklanır ve uygulamayı sildiğinde kaldırılır. Analiz ve çökme verileri Google’ın politikaları doğrultusunda saklanır. Verilerini satmıyor veya reklam dışı amaçlarla üçüncü taraflara devretmiyoruz.</p>
+
+    <h2><span class="num">5</span>Çocukların gizliliği</h2>
+    <p>Uygulama genel kitleye yöneliktir ve çocuklardan bilerek kişisel veri toplamaz.</p>
+
+    <h2><span class="num">6</span>Haklarını kullanma</h2>
+    <p>Uygulamayı kaldırmak cihazındaki tüm yerel verileri siler. Verilerinle ilgili herhangi bir talebin için bize e-posta ile ulaşabilirsin.</p>
+
+    <h2><span class="num">7</span>Değişiklikler</h2>
+    <p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişikliklerde bu sayfadaki yürürlük tarihi güncellenir.</p>
+  </section>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <section id="en" hidden>
+    <p class="lead">Ezan Alarmı (“Prayer Times”, the “app”) shows Islamic prayer times and rings an adhan alarm. We respect your privacy. This policy explains, in plain language, what data is processed and why.</p>
+
+    <div class="callout">In short: no account, and we never ask for your name or email. Location is used to calculate prayer times, ads support the app, and anonymous usage/crash data help us improve it. We do not sell your data.</div>
+
+    <h2><span class="num">1</span>Data we process, and why</h2>
+    <div class="data-card">
+      <div class="data-row">
+        <div class="k">Location <span class="chip">Prayer times</span></div>
+        <div class="v">Used to calculate the prayer times and qibla direction for your area. Location is processed on your device and sent only to prayer-time providers to fetch times; it is not stored on our servers and not linked to your identity.</div>
+      </div>
+      <div class="data-row">
+        <div class="k">Advertising ID <span class="chip">Ads</span></div>
+        <div class="v">Google AdMob processes your advertising ID and ad-interaction data to show ads. Buying Premium removes ads.</div>
+      </div>
+      <div class="data-row">
+        <div class="k">Usage data <span class="chip">Analytics</span></div>
+        <div class="v">Google Firebase Analytics collects anonymous event/usage data so we can understand and improve the app.</div>
+      </div>
+      <div class="data-row">
+        <div class="k">Crash logs <span class="chip">Stability</span></div>
+        <div class="v">Google Firebase Crashlytics collects crash reports and device state to help us find and fix bugs.</div>
+      </div>
+      <div class="data-row">
+        <div class="k">Purchase status <span class="chip">Premium</span></div>
+        <div class="v">Whether you own Premium, via Google Play Billing. We never see your payment or card details; Google handles those.</div>
+      </div>
+    </div>
+    <p>We do <strong>not</strong> collect personal information such as your name, email, or phone number inside the app.</p>
+
+    <h2><span class="num">2</span>Device permissions</h2>
+    <ul>
+      <li><strong>Location:</strong> for prayer times and qibla.</li>
+      <li><strong>Notifications & exact alarm:</strong> to ring the adhan on time.</li>
+      <li><strong>Battery-optimization exemption:</strong> so the alarm works reliably in the background.</li>
+      <li>You can revoke any permission at any time in your device settings.</li>
+    </ul>
+
+    <h2><span class="num">3</span>Who we share data with</h2>
+    <ul>
+      <li><strong>Google</strong> — AdMob (ads), Firebase (analytics & crashes), Play Billing (purchases).</li>
+      <li><strong>Prayer-time providers</strong> — Diyanet (Presidency of Religious Affairs) data in Turkey, and Aladhan (aladhan.com) worldwide. Location/coordinates are sent to fetch times.</li>
+    </ul>
+
+    <h2><span class="num">4</span>Retention & security</h2>
+    <p>Prayer times and your settings are stored on your device and removed when you uninstall the app. Analytics and crash data are retained under Google’s policies. We do not sell your data or share it with third parties for purposes other than those above.</p>
+
+    <h2><span class="num">5</span>Children’s privacy</h2>
+    <p>The app is intended for a general audience and does not knowingly collect personal data from children.</p>
+
+    <h2><span class="num">6</span>Your rights</h2>
+    <p>Uninstalling the app deletes all local data on your device. For any request regarding your data, contact us by email.</p>
+
+    <h2><span class="num">7</span>Changes</h2>
+    <p>We may update this policy from time to time. For significant changes, the effective date on this page will be updated.</p>
+  </section>
+
+  <div class="contact">
+    <div style="color:var(--muted);font-size:14px" data-tr="İletişim" data-en="Contact">İletişim</div>
+    <a class="mail" href="mailto:wallexsoft@gmail.com">wallexsoft@gmail.com</a>
+    <div style="color:var(--muted);font-size:14px;margin-top:8px">Ezan Alarmı — Wallex</div>
+  </div>
+
+  <footer class="foot">
+    <span data-tr="Bu belge Ezan Alarmı uygulaması içindir · com.wallex.ezanalarmi" data-en="This document applies to the Ezan Alarmı app · com.wallex.ezanalarmi">Bu belge Ezan Alarmı uygulaması içindir · com.wallex.ezanalarmi</span>
+  </footer>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('tr').hidden = (lang !== 'tr');
+    document.getElementById('en').hidden = (lang !== 'en');
+    document.getElementById('btn-tr').setAttribute('aria-pressed', lang === 'tr');
+    document.getElementById('btn-en').setAttribute('aria-pressed', lang === 'en');
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-' + lang + ']').forEach(function (el) {
+      el.textContent = el.getAttribute('data-' + lang);
+    });
+    try { history.replaceState(null, '', '#' + lang); } catch (e) {}
+  }
+  setLang(location.hash.replace('#', '') === 'en' ? 'en' : 'tr');
+</script>
+</body>
+</html>
