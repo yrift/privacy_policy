@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Yanlış Defterim</title>
+<meta name="description" content="Yanlış Defterim gizlilik politikası. Soruların ve fotoğrafların telefonunda kalır.">
+<style>
+  :root {
+    --bg: #f4efe4;
+    --card: #fbf8f1;
+    --ink: #1f1d1a;
+    --muted: #6b6459;
+    --line: #ddd3bf;
+    --accent: #7e1f2b;
+    --accent-soft: #f3e3e3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e14;
+      --card: #16161f;
+      --ink: #eceaf2;
+      --muted: #9a95a8;
+      --line: #26262f;
+      --accent: #d8707e;
+      --accent-soft: #2a1a1d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+
+  header { margin-bottom: 28px; }
+  .mark {
+    display: inline-flex; align-items: center; gap: 12px;
+    text-decoration: none; color: inherit;
+  }
+  .mark svg { width: 40px; height: 40px; flex: none; }
+  .mark b { font-size: 18px; letter-spacing: -0.01em; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 22px 0 6px; letter-spacing: -0.02em; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0; }
+
+  .langs { display: flex; gap: 8px; margin: 24px 0 0; }
+  .langs button {
+    font: inherit; font-size: 14px; font-weight: 600;
+    padding: 7px 16px; border-radius: 999px; cursor: pointer;
+    background: transparent; color: var(--muted);
+    border: 1px solid var(--line);
+  }
+  .langs button[aria-pressed="true"] {
+    background: var(--accent-soft); color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .lead {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 18px 20px; margin: 26px 0 8px;
+  }
+  .lead p { margin: 0 0 10px; }
+  .lead p:last-child { margin-bottom: 0; }
+
+  h2 {
+    font-size: 20px; margin: 38px 0 10px; letter-spacing: -0.01em;
+    padding-top: 18px; border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 20px; }
+  li { margin: 5px 0; }
+  a { color: var(--accent); }
+
+  .table-scroll { overflow-x: auto; margin: 14px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 420px; font-size: 15px; }
+  th, td {
+    text-align: left; padding: 10px 12px;
+    border-bottom: 1px solid var(--line); vertical-align: top;
+  }
+  th { color: var(--muted); font-weight: 600; font-size: 13px;
+       text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .none { font-weight: 700; color: var(--accent); }
+
+  footer {
+    margin-top: 46px; padding-top: 20px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 14px;
+  }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="mark">
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <rect x="12" y="6" width="40" height="52" rx="5" fill="#1B1A18" stroke="#8a8378" stroke-width="1.5"/>
+      <rect x="40" y="6" width="5" height="52" fill="#7E1F2B"/>
+    </svg>
+    <b>Yanlış Defterim</b>
+  </span>
+
+  <h1 data-tr="Gizlilik Politikası" data-en="Privacy Policy">Gizlilik Politikası</h1>
+  <p class="meta">
+    <span data-tr="Yürürlük tarihi: 1 Ekim 2026" data-en="Effective date: 1 October 2026">Yürürlük tarihi: 1 Ekim 2026</span>
+    · com.wallex.yanlisdefterim
+  </p>
+
+  <div class="langs">
+    <button type="button" data-lang="tr" aria-pressed="true">Türkçe</button>
+    <button type="button" data-lang="en" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<main id="tr">
+  <div class="lead">
+    <p><strong>Yanlış Defterim'in sunucusu yok ve hesap istemez.</strong> Eklediğin
+    sorular, fotoğraflar, çözümler, doğru cevaplar ve notların telefonunda kalır;
+    hiçbiri bize gönderilmez. Uygulamada reklam yoktur.</p>
+    <p>Cihazdan çıkan tek şey, uygulamanın çalışır kalmasını ve düzelmesini sağlayan
+    <strong>Google Firebase</strong> kayıtlarıdır: çökme raporları ve isimsiz kullanım
+    ölçümü.</p>
+  </div>
+
+  <h2>Bizim topladıklarımız</h2>
+  <p>Wallex Soft'un kendi sunucusu yoktur. İki tür kayıt Google'ın Firebase servisine gider:</p>
+  <ul>
+    <li><strong>Çökme raporları (Firebase Crashlytics).</strong> Uygulama çöktüğünde ne
+    olduğunu anlatan teknik kayıt: hata yığını, cihaz modeli, Android sürümü ve kuruluma
+    özel rastgele bir kimlik.</li>
+    <li><strong>Kullanım ölçümü (Firebase Analytics).</strong> Hangi düğmelere basıldığı ve
+    sayılar: örneğin bir soru eklendi (kameradan mı galeriden mi), bir tekrar yapıldı,
+    cevap doğru muydu, hatırlatma gösterildi mi. Bunlar uygulamanın öğrenciyi gerçekten
+    geri getirip getirmediğini anlamamız için.</li>
+  </ul>
+  <p>Bu kayıtlarda <span class="none">asla</span> bulunmayanlar: soru ve çözüm
+  fotoğrafları, yazdığın konu adları, girdiğin doğru cevaplar, kendi eklediğin ders
+  adları, adın, e-postan.</p>
+
+  <h2>Cihazında kalanlar</h2>
+  <div class="table-scroll"><table>
+    <tr><th>Ne</th><th>Nerede durur</th></tr>
+    <tr><td>Sorular, çözüm fotoğrafları</td><td>Uygulamanın kendi özel klasöründe</td></tr>
+    <tr><td>Dersler, konular, doğru cevaplar, tekrar takvimi</td><td>Uygulamanın yerel veritabanında</td></tr>
+    <tr><td>Ayarlar (sınav, hatırlatma saati)</td><td>Cihazın yerel tercih deposunda</td></tr>
+  </table></div>
+  <p>Bir soruyu uygulamadan silebilir ya da uygulamayı kaldırarak hepsini temizleyebilirsin.</p>
+  <p><strong>Android yedeklemesi.</strong> Telefonunda Google yedeklemesi açıksa Android,
+  uygulamanın verilerini (sorular dahil) <strong>senin Google hesabına</strong>
+  yedekleyebilir; yeni telefona geçince defterin geri gelir. Bu yedek bize değil, senin
+  hesabına gider ve telefonun ayarlarından yönetilir.</p>
+
+  <h2>Kamera ve galeri</h2>
+  <p>Kamera yalnızca “Fotoğraf çek”e bastığında açılır ve çekilen fotoğraf yalnızca
+  uygulamanın içine kaydedilir. Galeriden seçerken Android'in kendi fotoğraf seçicisi
+  kullanılır: uygulama <strong>yalnızca seçtiğin fotoğrafı</strong> görür, galerinin geri
+  kalanına erişmez. Başka bir uygulamadan “Paylaş” ile gönderdiğin resim de aynı şekilde
+  yalnızca uygulamanın içine kopyalanır.</p>
+
+  <h2>Hatırlatma bildirimi</h2>
+  <p>Akşam hatırlatması tamamen telefonunda hesaplanır: o gün sırası gelen soru varsa
+  günde en fazla bir bildirim gösterilir. Bildirim iznini istediğin zaman
+  kapatabilirsin; uygulama bildirim olmadan da çalışır.</p>
+
+  <h2>Çocuklar</h2>
+  <p>Uygulama ortaokul ve lise öğrencileri için tasarlanmıştır. Kimseden ad, e-posta ya da
+  iletişim bilgisi istemez ve kimliği belirlenebilir kişisel bilgi toplamaz. 13 yaşından
+  küçük bir çocuğa ait bilgi toplandığını düşünüyorsan bize yaz, silinmesini sağlarız.</p>
+
+  <h2>Verilerinin silinmesi</h2>
+  <p>Telefonundaki her şey, uygulamayı kaldırdığında silinir. Firebase'deki isimsiz
+  kayıtların silinmesini istersen <a href="mailto:wallexsoft@gmail.com">wallexsoft@gmail.com</a>
+  adresine yaz. Kayıtlar isimsiz olduğundan, silebilmemiz için sana bir kimlik soramayız;
+  bu yüzden en kesin yol uygulamayı kaldırmaktır.</p>
+
+  <h2>Değişiklikler</h2>
+  <p>Bu politika değişirse bu sayfa güncellenir ve üstteki tarih değişir.</p>
+
+  <h2>İletişim</h2>
+  <p>Wallex Soft · <a href="mailto:wallexsoft@gmail.com">wallexsoft@gmail.com</a></p>
+</main>
+
+<main id="en" hidden>
+  <div class="lead">
+    <p><strong>Yanlış Defterim (“My Mistakes Notebook”) has no server and no accounts.</strong>
+    The questions, photos, worked solutions, correct answers and notes you add stay on your
+    phone; none of them are sent to us. The app shows no ads.</p>
+    <p>The only things that leave the device are <strong>Google Firebase</strong> records that
+    keep the app working: crash reports and anonymous usage measurement.</p>
+  </div>
+
+  <h2>What we collect</h2>
+  <p>Wallex Soft runs no server of its own. Two kinds of records go to Google Firebase:</p>
+  <ul>
+    <li><strong>Crash reports (Firebase Crashlytics):</strong> the error trace, device model,
+    Android version and a random per-install identifier.</li>
+    <li><strong>Usage measurement (Firebase Analytics):</strong> which buttons were used and
+    counts — for example a question was added (camera or gallery), a review was done,
+    whether the answer was right, whether a reminder was shown.</li>
+  </ul>
+  <p>These records <span class="none">never</span> contain your question or solution photos,
+  topic names, the correct answers you enter, subject names you create, your name or e-mail.</p>
+
+  <h2>What stays on your device</h2>
+  <div class="table-scroll"><table>
+    <tr><th>What</th><th>Where it lives</th></tr>
+    <tr><td>Questions and solution photos</td><td>The app's private folder</td></tr>
+    <tr><td>Subjects, topics, answers, review schedule</td><td>The app's local database</td></tr>
+    <tr><td>Settings (exam, reminder time)</td><td>The device's local preferences</td></tr>
+  </table></div>
+  <p>Delete a question in the app, or uninstall the app to remove everything.</p>
+  <p><strong>Android backup.</strong> If Google backup is on, Android may back up the app's
+  data, including your questions, to <strong>your own Google account</strong> so it returns
+  on a new phone. That backup goes to your account, not to us.</p>
+
+  <h2>Camera and gallery</h2>
+  <p>The camera opens only when you tap “Take a photo”, and the photo is saved only inside
+  the app. The gallery uses Android's own photo picker: the app sees <strong>only the photo
+  you pick</strong>. A picture shared from another app is likewise copied only into the app.</p>
+
+  <h2>Reminder notification</h2>
+  <p>The evening reminder is computed entirely on your phone — at most one notification a
+  day, only when something is due. You can turn notifications off at any time; the app
+  works without them.</p>
+
+  <h2>Children</h2>
+  <p>The app is designed for middle- and high-school students. It asks no one for a name,
+  e-mail or contact details and collects no personally identifying information. If you
+  believe information about a child under 13 was collected, write to us and we will have
+  it deleted.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Everything on the phone is removed when you uninstall the app. To request deletion of
+  the anonymous Firebase records, write to
+  <a href="mailto:wallexsoft@gmail.com">wallexsoft@gmail.com</a>.</p>
+
+  <h2>Changes and contact</h2>
+  <p>If this policy changes, this page and the date above are updated.
+  Wallex Soft · <a href="mailto:wallexsoft@gmail.com">wallexsoft@gmail.com</a></p>
+</main>
+
+<footer>Wallex Soft · wallexsoft@gmail.com</footer>
+</div>
+
+<script>
+(function () {
+  var buttons = document.querySelectorAll('.langs button');
+  var panes = { tr: document.getElementById('tr'), en: document.getElementById('en') };
+  var swaps = document.querySelectorAll('[data-tr]');
+
+  function show(lang) {
+    for (var key in panes) panes[key].hidden = (key !== lang);
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+    });
+    swaps.forEach(function (el) { el.textContent = el.dataset[lang]; });
+    document.documentElement.lang = lang;
+    try { localStorage.setItem('yd-privacy-lang', lang); } catch (e) {}
+  }
+
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { show(b.dataset.lang); });
+  });
+
+  // Remembered choice wins; otherwise follow the browser, defaulting to Turkish
+  // for Turkish speakers and English for everyone else.
+  var saved = null;
+  try { saved = localStorage.getItem('yd-privacy-lang'); } catch (e) {}
+  var guess = (navigator.language || 'tr').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en';
+  show(saved === 'tr' || saved === 'en' ? saved : guess);
+})();
+</script>
+</body>
+</html>
